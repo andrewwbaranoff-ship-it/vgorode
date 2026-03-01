@@ -13,8 +13,8 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "zustand": "4.5.4",
-    "next-pwa": "^6.5.4",
-    "axios": "1.6.5"
+    "axios": "1.6.5",
+    "next-pwa": "*"
   },
   "devDependencies": {
     "@types/node": "20.14.10",
