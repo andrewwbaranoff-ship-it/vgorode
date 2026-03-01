@@ -1,9 +1,0 @@
-FROM rust:1.79-slim AS builder
-WORKDIR /app
-COPY agent/ .
-RUN cargo build –release
-FROM debian:bookworm-slim
-WORKDIR /app
-COPY –from=builder /app/target/release/vgorode-agent .
-EXPOSE 8765
-CMD [”./vgorode-agent”]
